@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Menú</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <div class="container">
+            <div class="restaurante-nombre">SAL Y PIMIENTA</div>
+            <h1>Editar Menú del Día</h1>
+            <form id="login-form">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <form id="edit-form" style="display:none;">
+                <label for="desc">Descripción del menú:</label>
+                <textarea id="desc" required></textarea>
+                <label for="contornos">Contornos (separados por comas):</label>
+                <input type="text" id="contornos" required placeholder="ARROZ, PAPAS, ENSALADA" style="text-transform: uppercase;">
+                <table id="edit-menu-table">
+                    <thead>
+                        <tr>
+                            <th>Proteína</th>
+                            <th>Precio</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button type="button" id="add-row">Agregar Fila</button>
+                <button type="submit">Guardar Cambios</button>
+            </form>
+            <a href="index.html" class="admin-link">Volver al menú</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

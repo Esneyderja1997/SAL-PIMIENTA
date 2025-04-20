@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Día</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url('./images/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="restaurante-nombre">SAL Y PIMIENTA</div>
+        <h1>Menú del Día</h1>
+        <div id="menu-description" class="menu-description"></div>
+        <div id="contornos-list" class="contornos-list"></div>
+        <table id="menu-table">
+            <thead>
+                <tr>
+                    <th>Proteína</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <a href="admin.html" class="admin-link small">Editar menú</a>
+        <a href="https://wa.me/+573002635183?text=Hola%2C%20quiero%20hacer%20un%20pedido%20del%20men%C3%BA%20del%20d%C3%ADa" target="_blank" class="whatsapp-btn">Solicitar pedido por WhatsApp</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
